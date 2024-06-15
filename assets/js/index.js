@@ -10,7 +10,7 @@ class Vehicle {
         return `Vehicle: brand - ${this.brand}, model - ${this.model}, age - ${this.getAge}`;
     }
 
-    get getAge() {
+    get age() {
         return new Date().getFullYear() - this.manufactureDate.getFullYear();
     }
 }
@@ -32,7 +32,7 @@ class PassengerTransport extends Vehicle {
     }
 
     getFullInfo() {
-        return `Passenger transport: brand - ${this.brand}, model - ${this.model}, age - ${this.getAge}, passenger limit - ${this.passengerLimit}`;
+        return `Passenger transport: brand - ${this.brand}, model - ${this.model}, age - ${this.age}, passenger limit - ${this.passengerLimit}`;
     }
 }
 
@@ -47,7 +47,7 @@ class FreightTransport extends Vehicle {
     }
 
     getFullInfo() {
-        return `Freight transport: brand - ${this.brand}, model - ${this.model}, age - ${this.getAge}, capacity - ${this.capacity}`;
+        return `Freight transport: brand - ${this.brand}, model - ${this.model}, age - ${this.age}, capacity - ${this.capacity}`;
     }
 }
 
